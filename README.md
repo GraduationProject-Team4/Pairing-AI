@@ -8,6 +8,8 @@
 
 하나의 input 파일당 4개의 output 파일을 생성한다.
 
+　　　　　
+
 ## 2. 분류
 각각의 단일 소리를 분석해 어떤 소리인지 분류
 
@@ -33,6 +35,8 @@ ESC-50, AI-Hub 소음 환경 음성인식 데이터, UrbanSound8K
   + car horn
   + train
   + steet_music
+
+　　　　　
 
 ## Members
 |<img src="https://avatars.githubusercontent.com/u/108173863?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/98511311?v=4" width="150" height="150"/>|
