@@ -1,18 +1,38 @@
 # 주변 환경 소리 분석
 
-__1. 주변 환경의 중첩된 소리를 단일 소리로 분리__
-
-모델(라이브러리): Demucs
-
-__2. 주변 환경의 중첩된 소리를 단일 소리로 분리__
-
-모델: ResNet-34
-
-학습 데이터셋: ESC-50, AI-Hub 소음 환경 음성인식 데이터, UrbanSound8K
-
 ## 1. 분리
+주변 환경의 중첩된 소리를 단일 소리로 분리
+
+### Demucs
+[Demucs](https://github.com/facebookresearch/demucs) is a music source separation model that supports drum, bass, and vocal separation based on U-Net convolutional architecture.
+
+하나의 input 파일당 4개의 output 파일을 생성한다.
 
 ## 2. 분류
+각각의 단일 소리를 분석해 어떤 소리인지 분류
+
+### ResNet-34
+분리된 음성 데이터를 분류하기 위해 PyTorch RESNET34 이용
+
+### Dataset
+ESC-50, AI-Hub 소음 환경 음성인식 데이터, UrbanSound8K
+
++ __총 630개의 데이터__
+  + Train Data 513개
+  + Validation Data 117개
+
++ __11개의 카테고리__
+  + dog
+  + cat
+  + rain
+  + wind
+  + thunderstorm
+  + human
+  + conversation
+  + siren
+  + car horn
+  + train
+  + steet_music
 
 ## Members
 |<img src="https://avatars.githubusercontent.com/u/108173863?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/98511311?v=4" width="150" height="150"/>|
