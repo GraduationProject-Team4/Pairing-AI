@@ -38,8 +38,23 @@ ESC-50, AI-Hub 소음 환경 음성인식 데이터, UrbanSound8K
 분리된 음성 데이터를 분류하기 위해 PyTorch RESNET34 이용
 
 ## 데이터 전처리
-+ __def spec_to_image__
+### def get_melspectrogram_db
+오디오 데이터를 멜 스펙트로그램으로 변환
+```
+def get_melspectrogram_db(file_path, sr=None, n_fft=2048, hop_length=512, n_mels=128, fmin=20, fmax=8300, top_db=80):
+  wav,sr = librosa.load(file_path,sr=sr)
+  if wav.shape[0]<5*sr:
+    wav=np.pad(wav,int(np.ceil((5*sr-wav.shape[0])/2)),mode='reflect')
+  else:
+    wav=wav[:5*sr]
+  spec=librosa.feature.melspectrogram(wav, sr=sr, n_fft=n_fft,
+              hop_length=hop_length,n_mels=n_mels,fmin=fmin,fmax=fmax)
+  spec_db=librosa.power_to_db(spec,top_db=top_db)
+  return spec_db
+```
 
+
+### def spec_to_image
 오디오 스펙트로그램을 받아서 이미지로 변환
 　　　　　
 
