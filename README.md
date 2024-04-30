@@ -59,9 +59,9 @@ ResNet은 Residual block(리시듀얼 블럭)이 여러 개 쌓여서 나온 CNN
 ## 모델 성능
 <img src = "./image/Loss.png" width="60%" height="60%">
 
-+ __Epoch-50 Train-Loss: 0.0989__
-+ __Epoch-50 Valid-Loss: 0.271__
-+ __Valid-accuracy: 0.91__
++ Epoch-50 Train-Loss: 0.0989
++ Epoch-50 Valid-Loss: 0.271
++ Valid-accuracy: 0.91
 
 ---
 # Members
