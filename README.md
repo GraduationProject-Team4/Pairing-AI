@@ -34,11 +34,6 @@ ESC-50, AI-Hub 소음 환경 음성인식 데이터, UrbanSound8K
   + train
   + steet_music
 
-## ResNet-34
-**분리된 음성 데이터를 분류하기 위해** PyTorch RESNET34 사용
-
-ResNet은 Residual block(리시듀얼 블럭)이 여러 개 쌓여서 나온 CNN 모델입니다. ResNet은 Skip Connection을 사용하는 Residual Block을 제안하면서 층이 깊어짐에 따른 과적합이나 기울기 소멸 문제를 해결했습니다.
-
 ## 데이터 전처리
 ### librosa
 **오디오 데이터 분류를 위해서** 소리의 특징을 추출해야 하기 때문에 음악과 소리 분석 라이브러리인 [librosa](https://github.com/librosa/librosa)를 사용
@@ -54,10 +49,16 @@ ResNet은 Residual block(리시듀얼 블럭)이 여러 개 쌓여서 나온 CNN
 
 |waveplot|melspectrogram|
 |:-:|:-:|
-|![graph](./image/waveplot.png)|![graph](./image/melspectrogram.png)|
+|<img src = "./image/waveplot.png" width="300" height="300">|<img src = "./image/melspectrogram.png" width="300" height="300">|
+
+## ResNet-34
+**분리된 음성 데이터를 분류하기 위해** PyTorch RESNET34 사용
+
+ResNet은 Residual block(리시듀얼 블럭)이 여러 개 쌓여서 나온 CNN 모델입니다. ResNet은 Skip Connection을 사용하는 Residual Block을 제안하면서 층이 깊어짐에 따른 과적합이나 기울기 소멸 문제를 해결했습니다.
 
 ## 모델 성능
-![graph](./image/Loss.png)
+<img src = "./image/Loss.png" width="60%" height="60%">
+
 + __Epoch-50 Train-Loss: 0.0989__
 + __Epoch-50 Valid-Loss: 0.271__
 + __Valid-accuracy: 0.91__
