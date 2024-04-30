@@ -49,7 +49,7 @@ ESC-50, AI-Hub 소음 환경 음성인식 데이터, UrbanSound8K
 
 |waveplot|melspectrogram|
 |:-:|:-:|
-|<img src = "./image/waveplot.png" width="200" height="200">|<img src = "./image/melspectrogram.png" width="200" height="200">|
+|<img src = "./image/waveplot.png" width="250" height="250">|<img src = "./image/melspectrogram.png" width="250" height="250">|
 
 ## ResNet-34
 **분리된 음성 데이터를 분류하기 위해** PyTorch RESNET34 사용
