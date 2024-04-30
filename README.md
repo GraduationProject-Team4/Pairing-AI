@@ -52,7 +52,12 @@ ResNet은 Residual block(리시듀얼 블럭)이 여러 개 쌓여서 나온 CNN
 + __def spec_to_image__
 : 이 함수로 입력 스펙트로그램을 정규화하고 스케일링하여 이미지로 변환하였습니다.
 
+|waveplot|melspectrogram|
+|:-:|:-:|
+|![graph](./image/waveplot.png)|![graph](./image/melspectrogram.png)|
+
 ## 모델 성능
+![graph](./image/Loss.png)
 + __Epoch-50 Train-Loss: 0.0989__
 + __Epoch-50 Valid-Loss: 0.271__
 + __Valid-accuracy: 0.91__
