@@ -46,11 +46,16 @@ ResNet은 Residual block(리시듀얼 블럭)이 여러 개 쌓여서 나온 CNN
 ### melspectrogram
 **특징 추출을 위해서** 주파수 단위를 사람이 듣는 소리 단위인 멜 단위로 바꾼 스펙트럼인 멜스펙트로그램을 사용.
 
-__1. def get_melspectrogram_db__
++ __def get_melspectrogram_db__
 : 이 함수로 오디오 데이터를 멜스펙트로그램 형태로 변환하고, dB(데시벨) 스케일로 변환하여 주파수 변화를 눈으로 쉽게 확인할 수 있는 형태로 만들었습니다.
 
-__2. def spec_to_image__
++ __def spec_to_image__
 : 이 함수로 입력 스펙트로그램을 정규화하고 스케일링하여 이미지로 변환하였습니다.
+
+## 모델 성능
++ __Epoch-50 Train-Loss: 0.0989__
++ __Epoch-50 Valid-Loss: 0.271__
++ __Valid-accuracy: 0.91__
 
 ---
 # Members
