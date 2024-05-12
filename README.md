@@ -1,7 +1,7 @@
-# 주변 환경 소리 분석
+# Environmental Sound Classification
 
-1. [분리](#분리)
-2. [분류](#분류)
+1. [Separation](#분리)
+2. [Classification](#분류)
 
 ---
 # Separation
