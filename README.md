@@ -23,7 +23,7 @@ ESC-50, AI-Hub 소음 환경 음성인식 데이터, UrbanSound8K
   + 513 Train Data
   + 117 Validation Data
 
-+ __11 Categories__
++ __13 Categories__
   + dog
   + cat
   + rain
@@ -35,6 +35,8 @@ ESC-50, AI-Hub 소음 환경 음성인식 데이터, UrbanSound8K
   + car horn
   + train
   + steet_music
+  + Clock alarm
+  + Door Knock
 
 ## Data preprocessing
 ### librosa
@@ -54,7 +56,7 @@ For feature extraction, we use a mellspectrogram, which is a spectrum with frequ
 |<img src = "./image/waveplot.png" width="300" height="300">|<img src = "./image/melspectrogram.png" width="300" height="300">|
 
 ## ResNet-34
-Using PyTorch RESNET34 to classify segmented voice data
+Using PyTorch [RESNET34](https://pytorch.org/vision/main/models/generated/torchvision.models.resnet34.html) to classify segmented voice data
 
 ResNet is a CNN model that results from stacking multiple residual blocks. ResNet proposed Residual Blocks with Skip Connections to address the problem of overfitting or gradient vanishing as the layer gets deeper.
 
@@ -64,6 +66,14 @@ ResNet is a CNN model that results from stacking multiple residual blocks. ResNe
 + Epoch-50 Train-Loss: 0.0989
 + Epoch-50 Valid-Loss: 0.271
 + Valid-accuracy: 0.91
+  
+# Used Libraries
+- [URBANSOUND8K](https://urbansounddataset.weebly.com/urbansound8k.html)
+- [AI HUB: 소음 환경 음성인식 데이터](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=568)
+- ESC50
+  > K. J. Piczak. **ESC: Dataset for Environmental Sound Classification**. *Proceedings of the 23rd Annual ACM Conference on Multimedia*, Brisbane, Australia, 2015.
+  >
+  > [DOI: http://dx.doi.org/10.1145/2733373.2806390]
 
 ---
 # Members
